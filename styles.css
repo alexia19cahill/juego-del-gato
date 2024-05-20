@@ -32,6 +32,24 @@ height: 100 px;
 
    }
 
+  .botones2{
+    width: 100px;
+    height: 100px;
+    border: solid white 8px;
+    display: flex;
+    background-color: rgb(26, 35, 107);
+    justify-content: center;
+    align-items: center;
+     
+   }
+   
+   .botones2:hover{
+
+    background-color: rgb(181, 184, 184);
+  }
+
+
+
 
 
    .botones{
@@ -47,12 +65,33 @@ height: 100 px;
    
    .botones:hover{
 
-    background-color: rgb(153, 158, 158);
+    background-color: rgb(181, 184, 184);
   }
 
-  
+.nav{
 
+margin-left: 85%;
+background-color: white;
+color: black;
+text-decoration: none;
+
+
+
+
+}
    
   
-
+.button1{
+margin-left: 18%;
+background-color: rgb(46, 46, 46);
+color: white;
+width: 150px;
+height: 35px;
+}
   
+  .cambiarFondo{
+  
+  background-image: url(img/d6b490325eae680ed7094c0d780de6d5.jpg);
+  
+  
+  }
