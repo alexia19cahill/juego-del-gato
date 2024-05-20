@@ -2,7 +2,6 @@
 
 body{
 
-<<<<<<< HEAD
 background-image: url(img/d94bfec0f95422948635306a3a1fa058.jpg);
 
 
@@ -96,55 +95,3 @@ height: 35px;
   
   
   }
-=======
-    background-image: url(img/d94bfec0f95422948635306a3a1fa058.jpg);
-    
-    
-    
-    }
-    .tituloJuego{
-    margin-left: 10%;
-    font-size: 60px;
-    font-family: 'Times New Roman', Times, serif;
-    
-    }
-    
-    .tituloJuego{
-    
-    background-color: rgb(255, 255, 255);
-    width: 100 px;
-    height: 100 px;
-    
-    }
-    
-    
-    
-    .cubo{
-    
-        text-align: center;
-        display: flex;
-        margin-left: 10%;
-    
-       }
-    
-    
-    
-       .botones{
-        width: 100px;
-        height: 100px;
-        border: solid white 8px;
-        display: flex;
-        background-color: rgb(144, 133, 133);
-        justify-content: center;
-        align-items: center;
-         
-       }
-       
-       .botones:hover{
-    
-        background-color: rgb(153, 158, 158);
-      }
-    
-      
-    
->>>>>>> d794a5322935129e798a0b02d80b6d25818d6386
