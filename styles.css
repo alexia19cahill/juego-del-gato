@@ -11,7 +11,7 @@ background-image: url(img/d94bfec0f95422948635306a3a1fa058.jpg);
 margin-left: 10%;
 font-size: 60px;
 font-family: 'Times New Roman', Times, serif;
-
+color: rgb(71, 52, 38);
 }
 
 .tituloJuego{
@@ -37,7 +37,7 @@ height: 100 px;
     height: 100px;
     border: solid white 8px;
     display: flex;
-    background-color: rgb(26, 35, 107);
+    background-color: rgb(81, 76, 76);
     justify-content: center;
     align-items: center;
      
@@ -45,7 +45,7 @@ height: 100 px;
    
    .botones2:hover{
 
-    background-color: rgb(181, 184, 184);
+    background-color: rgb(150, 144, 135);
   }
 
 
@@ -57,7 +57,7 @@ height: 100 px;
     height: 100px;
     border: solid white 8px;
     display: flex;
-    background-color: rgb(144, 133, 133);
+    background-color: rgb(171, 161, 156);
     justify-content: center;
     align-items: center;
      
@@ -65,16 +65,16 @@ height: 100 px;
    
    .botones:hover{
 
-    background-color: rgb(181, 184, 184);
+    background-color: rgb(138, 123, 117);
   }
 
 .nav{
 
 margin-left: 85%;
-background-color: white;
-color: black;
+background-color: black;
+color: white;
 text-decoration: none;
-
+font-size: 20px;
 
 
 
@@ -83,15 +83,24 @@ text-decoration: none;
   
 .button1{
 margin-left: 18%;
-background-color: rgb(46, 46, 46);
+background-color: rgb(83, 70, 70);
 color: white;
+font-size: 20px;
 width: 150px;
 height: 35px;
 }
+
+.button2{
+  margin-left: 18%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  width: 150px;
+  height: 35px;
+  }
   
   .cambiarFondo{
   
-  background-image: url(img/d6b490325eae680ed7094c0d780de6d5.jpg);
-  
-  
+  background-image: url(img/d94bfec0f95422948635306a3a1fa058.jpg);
+
   }
