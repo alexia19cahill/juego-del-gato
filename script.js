@@ -9,8 +9,6 @@ console.log(botones);
 function validarGanador(jugador) {
      console.log(jugador);
  for (let index = 0; index < botones.length; index++) {
- 
-
 
     if (bn0.innerHTML == jugador && bn1.innerHTML == jugador && bn2.innerHTML == jugador) {
         return alert ("ganaste",jugador);
@@ -27,7 +25,36 @@ function validarGanador(jugador) {
         return alert ("ganaste",jugador);
         
     }
+    
+    if (bn0.innerHTML == jugador && bn3.innerHTML == jugador && bn6.innerHTML == jugador) {
+        return alert ("ganaste",jugador);
 
+    }
+    
+
+    if (bn1.innerHTML == jugador && bn4.innerHTML == jugador && bn6.innerHTML == jugador) {
+        return alert ("ganaste",jugador);
+      
+        
+    }
+      if (bn2.innerHTML == jugador && bn5.innerHTML == jugador && bn8.innerHTML == jugador) {
+        return alert ("ganaste",jugador);
+        
+    }
+
+
+     if (bn0.innerHTML == jugador && bn4.innerHTML == jugador && bn8.innerHTML == jugador) {
+        return alert ("ganaste",jugador);
+
+    }
+    
+
+    if (bn2.innerHTML == jugador && bn4.innerHTML == jugador && bn6.innerHTML == jugador) {
+        return alert ("ganaste",jugador);
+      
+        
+    }
+    
  }
 
 
@@ -75,9 +102,10 @@ function computadora() {
    
 //    se crea un for que hace un ciclo en cual va a recorrer hasta 15 veces para encontrar un espacio en el cual meterse
       
-      let bandera = true
-
+    let bandera = true
+    let cont = 0; 
     while (bandera) {
+        cont++
         // se implementa el math floor para que tome y redondea al entero inferior mas proximo
         // el math ramdom crea un valor aleatorio es este caso se le indico que el max es 9
         //  y se crea un if en el cual va a validar si hay espacios en blanco para que marque o
@@ -85,15 +113,14 @@ function computadora() {
          if (botones[posicion].innerHTML == "") {
             botones[posicion].innerHTML = "O";
 
-
-             
-            
             // se hace el break para que termine el bucle, ciclo o for
            bandera = false
+        }else if (cont == 9) {
+            bandera = false
         }
         
        
-           console.log(posicion);
+           console.log(cont);
         
     }
    
