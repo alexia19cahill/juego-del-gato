@@ -92,6 +92,43 @@ let darClick =  (e) =>  {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*hola*/
+
+
+
+
+
+
+
+
     //  setTimeout se utilizo para dar tiempo al resultuda en este caso se le
     // dio 1000 que es igual a un segundo  antes de  marcar en cualquier espacio
     setTimeout(() => {
