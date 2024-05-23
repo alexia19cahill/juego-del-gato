@@ -4,61 +4,69 @@ let  botones = document.querySelectorAll(".botones");
 
 console.log(botones);
 
-
+let marcadas = 0;
 
 function validarGanador(jugador) {
      console.log(jugador);
  for (let index = 0; index < botones.length; index++) {
 
     if (bn0.innerHTML == jugador && bn1.innerHTML == jugador && bn2.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste", jugadores[index]);
 
     }
     
 
     if (bn3.innerHTML == jugador && bn4.innerHTML == jugador && bn5.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste", jugadores[index]);
       
         
     }
       if (bn6.innerHTML == jugador && bn7.innerHTML == jugador && bn8.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste", jugadores[index]);
         
     }
     
     if (bn0.innerHTML == jugador && bn3.innerHTML == jugador && bn6.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste",jugadores[index]);
 
     }
     
 
     if (bn1.innerHTML == jugador && bn4.innerHTML == jugador && bn6.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste",jugadores[index]);
       
         
     }
       if (bn2.innerHTML == jugador && bn5.innerHTML == jugador && bn8.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste",jugadores[index]);
         
     }
 
 
      if (bn0.innerHTML == jugador && bn4.innerHTML == jugador && bn8.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste",jugadores[index]);
 
     }
     
 
     if (bn2.innerHTML == jugador && bn4.innerHTML == jugador && bn6.innerHTML == jugador) {
-        return alert ("ganaste",jugador);
+        return alert ("ganaste",jugadores[index]);
       
         
     }
+       console.log(marcadas);
+        for (let i = 0; i < botones.length; i++) {
+            if (botones[i].innerHTML !== "") {
+                marcadas++;
+            }
+        }
+       
+        if (marcadas === botones.length) {
+            return alert("Empate");
+        }
+    }
     
  }
-
-
-}
 
 
 
@@ -100,7 +108,7 @@ let darClick =  (e) =>  {
 
 function computadora() {
    
-//    se crea un for que hace un ciclo en cual va a recorrer hasta 15 veces para encontrar un espacio en el cual meterse
+//    se crea un ciclo en cual va a recorrer hasta encontrar un espacio en el cual meterse
       
     let bandera = true
     let cont = 0; 

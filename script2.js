@@ -19,8 +19,6 @@ for (let i = 0; i < botones2.length; i++) {
 }
 
 
-
-
 let botonIniciar = document.querySelector("button")
 
 botonIniciar.addEventListener("click" , function () {
