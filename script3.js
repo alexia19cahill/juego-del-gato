@@ -8,91 +8,47 @@ let marcadas = 0;
 
 function validarGanador(jugador) {
   console.log(jugador);
-  for (let index = 0; index < botones.length; index++) {
-    if (
-      bn0.innerHTML == jugador &&
-      bn1.innerHTML == jugador &&
-      bn2.innerHTML == jugador
-    ) {
-      return alert("ganaste", jugador);
-    }
+for (let index = 0; index < botones.length; index++) {
 
-    if (
-      bn3.innerHTML == jugador &&
-      bn4.innerHTML == jugador &&
-      bn5.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-    if (
-      bn6.innerHTML == jugador &&
-      bn7.innerHTML == jugador &&
-      bn8.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-
-    if (
-      bn0.innerHTML == jugador &&
-      bn3.innerHTML == jugador &&
-      bn6.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-
-    if (
-      bn1.innerHTML == jugador &&
-      bn4.innerHTML == jugador &&
-      bn6.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-      console.log(marcadas === botones.length);
-    }
-    if (
-      bn2.innerHTML == jugador &&
-      bn5.innerHTML == jugador &&
-      bn8.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-
-    if (
-      bn0.innerHTML == jugador &&
-      bn4.innerHTML == jugador &&
-      bn8.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-
-    if (
-      bn2.innerHTML == jugador &&
-      bn4.innerHTML == jugador &&
-      bn6.innerHTML == jugador
-    ) {
-      return alert("ganaste", +jugador);
-    }
-
-    // Verificar si hay empate
-    for (let i = 0; i < botones.length; i++) {
-      if (botones[i].innerHTML !== "") {
-        console.log(marcadas);
-        marcadas++;
-      }
-    }
-    // Si todas las celdas están marcadas y no hay ganador, es un empate
-    if (marcadas === botones.length) {
-      return alert("Empate");
-    }
-  }
+ if ((bn0.innerHTML == jugador[index] && bn1.innerHTML == jugador[index] && bn2.innerHTML == jugador[index]) ||
+ (bn3.innerHTML == jugador[index] && bn4.innerHTML == jugador[index] && bn5.innerHTML == jugador[index]) ||
+ (bn6.innerHTML == jugador[index] && bn7.innerHTML == jugador[index] && bn8.innerHTML == jugador[index])) {
+    turno.innerHTML="GANASTE"
+ return alert(""+ jugador[index] + " " + "ha ganado");
+ }
+ 
+ if ((bn0.innerHTML == jugador[index] && bn3.innerHTML == jugador[index] && bn6.innerHTML == jugador[index]) ||
+ (bn1.innerHTML == jugador[index] && bn4.innerHTML == jugador[index] && bn6.innerHTML == jugador[index]) ||
+(bn2.innerHTML == jugador[index] && bn5.innerHTML == jugador[index] && bn8.innerHTML == jugador[index])) {
+  turno.innerHTML="GANASTE"
+ return alert(""+ jugador[index] + " " + "ha ganado");
 }
 
-{
+
+if ((bn0.innerHTML == jugador[index] && bn4.innerHTML == jugador[index] && bn8.innerHTML == jugador[index]) ||
+(bn2.innerHTML == jugador[index] && bn4.innerHTML == jugador[index] && bn6.innerHTML == jugador[index])) {
+    turno.innerHTML="GANASTE"
+ return alert(""+ jugador[index] + " " + "ha ganado");
 }
+}
+    console.log(marcadas);
+     for (let i = 0; i < botones.length; i++) {
+         if (botones[i].innerHTML !== "") {
+             marcadas++;
+         }
+     }
+    
+     if (marcadas === botones.length) {
+         return alert("Empate");
+     }
+ }
+
 
 let darClick = (e) => {
   //   si el  espacio en el los botones es igual a vacio marque una x
   if (e.currentTarget.innerHTML == "") {
     e.currentTarget.innerHTML = "x";
+     turno.innerHTML="TURNO DE  ⭕"
   }
   validarGanador("x");
 
@@ -116,6 +72,7 @@ function computadora() {
     posicion = Math.floor(Math.random() * 9);
     if (botones[posicion].innerHTML == "") {
       botones[posicion].innerHTML = "O";
+       turno.innerHTML="TURNO DE   ❌"
 
       // se hace el break para que termine el bucle, ciclo o for
       bandera = false;
@@ -127,7 +84,7 @@ function computadora() {
   }
 
   validarGanador("O");
-}
+ }
 
 for (let index = 0; index < botones.length; index++) {
   botones[index].addEventListener("click", darClick);
