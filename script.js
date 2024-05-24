@@ -30,6 +30,7 @@ function validarGanador(jugador) {
      turno.innerHTML="GANASTE"
     return alert(""+ jugador[index] + " " + "ha ganado");
    }
+   console.log(1)
 
 //   validar ganes diagonales
    if ((bn0.innerHTML == jugador[index] && bn4.innerHTML == jugador[index] && bn8.innerHTML == jugador[index]) ||
